@@ -1,0 +1,16 @@
+・ResponseEntity
+→HTTPレスポンスの内容を定義できるクラス
+
+・ResponseEntity.createed
+→CREATED ステータスおよび指定された URI に設定された場所ヘッダー（Location）を使用して、新しいビルダーを作成します。
+→Location レスポンスヘッダーはリダイレクト先の URL を示します。
+
+・@RequestBody
+→クライアントから送られてくる値を受け取る為のアノテーション
+
+・UriComponentsBuilder
+→さまざまなメソッドを介してURIを設定する
+
+参考：
+https://spring.pleiades.io/spring-framework/docs/current/javadoc-api/org/springframework/web/util/UriComponentsBuilder.html
+https://qiita.com/rubytomato@github/items/8d132dec042f695e50f6
