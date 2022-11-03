@@ -10,7 +10,7 @@ public class ComicForm {
     private String name;
 
     @Positive
-    private int latest_volume;
+    private int latestVolume;
 
     public String getName() {
         return name;
@@ -20,11 +20,11 @@ public class ComicForm {
         this.name = name;
     }
 
-    public int getLatest_volume() {
-        return latest_volume;
+    public int getLatestVolume() {
+        return latestVolume;
     }
 
-    public void setLatest_volume(int latest_volume) {
-        this.latest_volume = latest_volume;
+    public void setLatestVolume(int latestVolume) {
+        this.latestVolume = latestVolume;
     }
 }

@@ -27,16 +27,16 @@ public class ComicsController {
         URI url = uriBuilder.path("/comics/id").
                 build().
                 toUri();
-        return ResponseEntity.created(url).body(Map.of("message", form.getName() + ":" + form.getLatest_volume() + "巻を登録しました。"));
+        return ResponseEntity.created(url).body(Map.of("message", form.getName() + ":" + form.getLatestVolume() + "巻を登録しました。"));
     }
 
     @PatchMapping("/comics")
     public ResponseEntity<Map<String, String>> patchComics(@RequestBody @Validated ComicForm form) {
-        return ResponseEntity.ok(Map.of("message", form.getName() + ":" + form.getLatest_volume() + "巻を更新しました。"));
+        return ResponseEntity.ok(Map.of("message", form.getName() + ":" + form.getLatestVolume() + "巻を更新しました。"));
     }
 
     @DeleteMapping("/comics")
     public ResponseEntity<Map<String, String>> deleteComics(@RequestBody @Validated ComicForm form) {
-        return ResponseEntity.ok(Map.of("message", form.getName() + ":" + form.getLatest_volume() + "巻を削除しました。"));
+        return ResponseEntity.ok(Map.of("message", form.getName() + ":" + form.getLatestVolume() + "巻を削除しました。"));
     }
 }
