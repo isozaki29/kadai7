@@ -10,7 +10,7 @@ public class ComicForm {
     private String name;
 
     @Positive
-    private int number_comic;
+    private int latest_volume;
 
     public String getName() {
         return name;
@@ -20,11 +20,11 @@ public class ComicForm {
         this.name = name;
     }
 
-    public int getNumber_comic() {
-        return number_comic;
+    public int getLatest_volume() {
+        return latest_volume;
     }
 
-    public void setNumber_comic(int number_comic) {
-        this.number_comic = number_comic;
+    public void setLatest_volume(int latest_volume) {
+        this.latest_volume = latest_volume;
     }
 }
