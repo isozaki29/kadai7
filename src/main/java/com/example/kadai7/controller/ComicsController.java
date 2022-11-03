@@ -15,9 +15,9 @@ public class ComicsController {
     @GetMapping("/comics")
     public Map<String, String> getComics(@RequestParam String comic) {
         if (comic.equals("ワンピース")) {
-            return Map.of("name", "ワンピース", "latest_volume", "103巻");
+            return Map.of("name", "ワンピース", "latestVolume", "103巻");
         } else if (comic.equals("チェンソーマン")) {
-            return Map.of("name", "チェンソーマン", "latest_volume", "11巻");
+            return Map.of("name", "チェンソーマン", "latestVolume", "11巻");
         }
         return null;
     }
